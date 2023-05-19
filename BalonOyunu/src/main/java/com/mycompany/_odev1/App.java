@@ -60,6 +60,11 @@ public class App {
             }
         }
         tail.next = head;
+        System.out.println("Örüntüde kullanılacak sayıyı giriniz");
+        int m=scanner.nextInt();
+        
+        balonPozisyonBul(n, m);
+        System.out.println("Kalan balonun pozisyonu: " + head.sira);
 
     }
 }
