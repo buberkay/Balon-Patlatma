@@ -25,6 +25,19 @@ public class App {
     }
     private static Node head;
     private static Node tail;
+    
+    public static void balonPozisyonBul(int n, int m)
+    {
+     while (head != head.next) 
+       {
+        for (int i = 1; i < m - 1; i++) {
+            head = head.next;
+        }
+        n--;
+        System.out.println(head.next.sira + ". balon patladı. " + n + " adet balon kaldı.");
+        head.next = head.next.next;
+       }
+    }
 
 
 
