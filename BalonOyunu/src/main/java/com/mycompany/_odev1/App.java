@@ -23,6 +23,9 @@ public class App {
             this.next = null;
         }
     }
+    private static Node head;
+    private static Node tail;
+
 
 
     public static void main(String[] args) {
