@@ -65,6 +65,7 @@ public class App {
         
         balonPozisyonBul(n, m);
         System.out.println("Kalan balonun pozisyonu: " + head.sira);
+        System.out.println("Tekrar oynamak ister misiniz?");        
 
     }
 }
