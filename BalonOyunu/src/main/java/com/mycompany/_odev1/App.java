@@ -40,8 +40,26 @@ public class App {
     }
 
 
-
     public static void main(String[] args) {
+        System.out.println("Hoş geldiniz. Toplam balon sayısını giriniz.");
+        Scanner scanner = new Scanner(System.in);  
+        int n=scanner.nextInt();
+        
+        for(int i=1; i<=n; i++)
+        {
+         Node newNode = new Node(i);
+          if (head == null) 
+            {
+                head = newNode;
+                tail = newNode;
+            } 
+          else 
+            {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+        tail.next = head;
 
     }
 }
