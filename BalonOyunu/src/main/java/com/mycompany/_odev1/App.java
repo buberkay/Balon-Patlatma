@@ -11,6 +11,19 @@ package com.mycompany._odev1;
 import java.util.Scanner;
 
 public class App {
+    
+     public static class Node 
+    {
+        int sira;
+        Node next;   
+        
+        public Node (int sira)
+        {
+            this.sira = sira;
+            this.next = null;
+        }
+    }
+
 
     public static void main(String[] args) {
 
